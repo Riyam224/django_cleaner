@@ -5,6 +5,11 @@
   Remove cache, logs, and junk safely — without touching your code 💙
 </p>
 
+<p align="center">
+  🔗 <a href="https://pypi.org/project/django-cleaner/">PyPI</a> •
+  📦 <code>pip install django-cleaner</code>
+</p>
+
 ---
 
 <p align="center">
