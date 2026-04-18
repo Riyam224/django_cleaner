@@ -23,9 +23,7 @@
 
 ## 🎬 Demo
 
-<p align="center">
-  <video src="demo/demo.MP4" width="700" controls autoplay loop muted></video>
-</p>
+![Django Cleaner Demo](demo/demo.gif)
 
 ---
 
