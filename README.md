@@ -166,7 +166,7 @@ pip install -r requirements.txt
 
 - macOS ✅
 - Linux ✅
-- Windows ⚠️ (basic support)
+- Windows ✅
 
 ---
 
