@@ -24,15 +24,7 @@
 ## 🎬 Demo
 
 <p align="center">
-  <img src="assets/demo.gif" width="700" />
-</p>
-
----
-
-## 🎬 Demo
-
-<p align="center">
-  <img src="assets/demo.gif" width="700">
+  <video src="demo/demo.MP4" width="700" controls autoplay loop muted></video>
 </p>
 
 ---
@@ -213,41 +205,3 @@ If this project helped you:
 📦 Share it with other developers
 
 It really helps 💙
-
-````
-
----
-
-# 🎥 How to record the GIF (quick pro tip)
-
-Use one of these:
-
-- **Mac:** QuickTime + convert to GIF (ezgif.com)
-- **Best tool:** Screen Studio (super smooth)
-- **Free:** Kap
-
-👉 Record this flow:
-
-```bash
-django-cleaner ~/Projects
-→ show deleting
-→ show final result
-````
-
-Keep it **5–8 seconds max** → looks professional ✨
-
----
-
-# 😏 Final touch (important)
-
-After adding GIF:
-
-```bash
-git add assets/demo.gif
-git commit -m "Add demo GIF"
-git push
-```
-
----
-
-
