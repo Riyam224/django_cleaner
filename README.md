@@ -1,5 +1,3 @@
-
-````markdown
 # 🧹 Django Cleaner
 
 <p align="center">
@@ -15,10 +13,18 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/pypi/v/django-cleaner">
-  <img src="https://img.shields.io/pypi/pyversions/django-cleaner">
-  <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey">
-  <img src="https://img.shields.io/badge/license-MIT-green">
+  <img src="https://img.shields.io/pypi/v/django-cleaner" />
+  <img src="https://img.shields.io/pypi/pyversions/django-cleaner" />
+  <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+</p>
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <img src="assets/demo.gif" width="700" />
 </p>
 
 ---
