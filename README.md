@@ -1,3 +1,5 @@
+
+````markdown
 # 🧹 Django Cleaner
 
 <p align="center">
@@ -6,7 +8,7 @@
 </p>
 
 <p align="center">
-  🔗 <a href="https://pypi.org/project/django-cleaner/">PyPI</a> •
+  🔗 <a href="https://pypi.org/project/django-cleaner/">View on PyPI</a> •
   📦 <code>pip install django-cleaner</code>
 </p>
 
@@ -21,23 +23,31 @@
 
 ---
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="assets/demo.gif" width="700">
+</p>
+
+---
+
 ## ✨ Features
 
 - 🗑 Remove `__pycache__` folders  
 - 🗑 Remove `.pyc` files  
-- 🗑 Remove `logs/`  
-- 🗑 Remove `staticfiles/`  
+- 🗑 Remove `logs/` directories  
+- 🗑 Remove `staticfiles/` (collected static)  
 - ⚡ Optional removal of `venv/`  
-- 🔍 Automatically detects Django projects  
-- 💾 Shows how much space was freed  
+- 🔍 Automatically detects Django projects (`manage.py`)  
+- 💾 Displays total freed disk space  
 
 ---
 
-## 🎥 Example
+## ⚡ Quick Example
 
 ```bash
 django-cleaner ~/StudioProjects
-```
+````
 
 ```text
 🧹 Cleaning: my_project
@@ -54,7 +64,7 @@ django-cleaner ~/StudioProjects
 
 ## 📦 Installation
 
-### 🔹 Using pipx (Recommended)
+### 🔹 Using pipx (Recommended for CLI tools)
 
 ```bash
 brew install pipx
@@ -62,10 +72,24 @@ pipx ensurepath
 pipx install django-cleaner
 ```
 
+👉 Installs the tool globally in an isolated environment (no dependency conflicts)
+
+---
+
 ### 🔹 Using pip
 
 ```bash
 pip install django-cleaner
+```
+
+---
+
+### 🔹 From source (GitHub)
+
+```bash
+git clone https://github.com/your-username/django-cleaner.git
+cd django-cleaner
+pip install .
 ```
 
 ---
@@ -84,7 +108,7 @@ django-cleaner
 django-cleaner ~/StudioProjects
 ```
 
-### Skip confirmation (auto delete venv)
+### Auto-delete virtual environments
 
 ```bash
 django-cleaner ~/StudioProjects --venv
@@ -92,38 +116,44 @@ django-cleaner ~/StudioProjects --venv
 
 ---
 
-## ⚠️ Prompt
+## ⚠️ Important Notes
 
-```text
-Do you want to delete virtual environments (venv)? (y/n)
+### ❗ If installed with pip:
+
+Make sure you're **not inside a virtual environment** before running:
+
+```bash
+deactivate
 ```
+
+👉 This prevents accidental deletion of the active `venv`
 
 ---
 
 ## 🧠 What gets cleaned?
 
-| Item           | Safe            |
-|----------------|-----------------|
-| `__pycache__`  | ✅ Yes          |
-| `.pyc` files   | ✅ Yes          |
-| `logs/`        | ✅ Yes          |
-| `staticfiles/` | ✅ Yes          |
-| `venv/`        | ⚠️ Optional     |
+| Item           | Safe        |
+| -------------- | ----------- |
+| `__pycache__`  | ✅ Yes       |
+| `.pyc` files   | ✅ Yes       |
+| `logs/`        | ✅ Yes       |
+| `staticfiles/` | ✅ Yes       |
+| `venv/`        | ⚠️ Optional |
 
 ---
 
 ## 🚫 What is NOT deleted?
 
-- Your Django code  
-- `manage.py`  
-- apps (`models.py`, `views.py`, etc.)  
-- database files  
+* Django source code
+* `manage.py`
+* apps (`models.py`, `views.py`, etc.)
+* database files
 
-👉 Your project remains fully usable
+👉 Your project remains fully functional
 
 ---
 
-## 🔁 After Cleaning
+## 🔁 After Cleaning (if venv removed)
 
 ```bash
 python -m venv venv
@@ -135,40 +165,83 @@ pip install -r requirements.txt
 
 ## 🌍 Supported Systems
 
-- macOS ✅  
-- Linux ✅  
-- Windows ⚠️ (may need minor adjustments)
+* macOS ✅
+* Linux ✅
+* Windows ⚠️ (basic support)
 
 ---
 
 ## 💡 Why this tool?
 
-Django projects accumulate hidden junk over time:
+Django projects accumulate unnecessary files over time:
 
-- cache files  
-- compiled Python files  
-- unused environments  
+* cache folders
+* compiled `.pyc` files
+* unused virtual environments
 
-👉 This tool keeps your machine clean and fast ⚡
+👉 This tool helps you reclaim disk space and keep your workspace clean ⚡
 
 ---
 
 ## 🚀 Roadmap
 
-- [ ] `--dry-run` mode 👀  
-- [ ] Windows full support  
-- [ ] Multi-command CLI (clean / scan / report)
+* [ ] `--dry-run` mode (preview changes)
+* [ ] Progress bar support
+* [ ] Improved Windows compatibility
+* [ ] Advanced filtering options
 
 ---
 
 ## ❤️ Author
 
-Built by **Riyam** ✨  
-Flutter & Django Developer  
+Built by **Riyam** ✨
+Flutter & Django Developer
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a star ⭐  
-It helps a lot 💙
+If this project helped you:
+
+⭐ Star the repo
+📦 Share it with other developers
+
+It really helps 💙
+
+````
+
+---
+
+# 🎥 How to record the GIF (quick pro tip)
+
+Use one of these:
+
+- **Mac:** QuickTime + convert to GIF (ezgif.com)
+- **Best tool:** Screen Studio (super smooth)
+- **Free:** Kap
+
+👉 Record this flow:
+
+```bash
+django-cleaner ~/Projects
+→ show deleting
+→ show final result
+````
+
+Keep it **5–8 seconds max** → looks professional ✨
+
+---
+
+# 😏 Final touch (important)
+
+After adding GIF:
+
+```bash
+git add assets/demo.gif
+git commit -m "Add demo GIF"
+git push
+```
+
+---
+
+
