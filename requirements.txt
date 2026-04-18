@@ -1,0 +1,22 @@
+# 🧹 Django Cleaner
+
+A simple CLI tool to clean Django projects safely without deleting important code.
+
+## ✨ Features
+
+- Removes `__pycache__` folders
+- Removes `.pyc` files
+- Removes `logs/`
+- Removes `staticfiles/`
+- Optional: remove `venv/`
+- Detects Django projects automatically
+
+---
+
+## 📦 Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/your-username/django-cleaner.git
+cd django-cleaner

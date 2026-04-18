@@ -1,0 +1,47 @@
+# 🐍 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📦 Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 🧪 Virtual environments
+venv/
+.env/
+.envrc/
+
+# 🧾 Logs
+*.log
+
+# 🖥 macOS
+.DS_Store
+
+# 🧠 IDEs
+.vscode/
+.idea/
+
+# 🔐 Environment variables
+.env
+
+# 🧪 pytest / coverage (future)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 🔧 pip / cache
+pip-wheel-metadata/
+
+# 🔒 mypy / type checking
+.mypy_cache/
+
+# 📦 pipx local installs (just in case)
+.local/
+
+# 🔥 Temporary files
+*.tmp
+*.swp
