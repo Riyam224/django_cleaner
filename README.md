@@ -1,8 +1,3 @@
-# 🎨 ✨ DJANGO PROJECTS CLEANER 
-
-This version looks 🔥 on GitHub (badges + structure + vibe)
-
-````markdown
 # 🧹 Django Cleaner
 
 <p align="center">
@@ -13,7 +8,8 @@ This version looks 🔥 on GitHub (badges + structure + vibe)
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.9+-blue.svg">
+  <img src="https://img.shields.io/pypi/v/django-cleaner">
+  <img src="https://img.shields.io/pypi/pyversions/django-cleaner">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey">
   <img src="https://img.shields.io/badge/license-MIT-green">
 </p>
@@ -22,21 +18,21 @@ This version looks 🔥 on GitHub (badges + structure + vibe)
 
 ## ✨ Features
 
-- 🗑 Remove `__pycache__` folders
-- 🗑 Remove `.pyc` files
-- 🗑 Remove `logs/`
-- 🗑 Remove `staticfiles/`
-- ⚡ Optional removal of `venv/`
-- 🔍 Automatically detects Django projects
-- 💾 Shows how much space was freed 😳
+- 🗑 Remove `__pycache__` folders  
+- 🗑 Remove `.pyc` files  
+- 🗑 Remove `logs/`  
+- 🗑 Remove `staticfiles/`  
+- ⚡ Optional removal of `venv/`  
+- 🔍 Automatically detects Django projects  
+- 💾 Shows how much space was freed  
 
 ---
 
-## 🎥 Demo
+## 🎥 Example
 
 ```bash
 django-cleaner ~/StudioProjects
-````
+```
 
 ```text
 🧹 Cleaning: my_project
@@ -58,18 +54,35 @@ django-cleaner ~/StudioProjects
 ```bash
 brew install pipx
 pipx ensurepath
+pipx install django-cleaner
 ```
 
+### 🔹 Using pip
+
 ```bash
-pipx install django-cleaner
+pip install django-cleaner
 ```
 
 ---
 
 ## 🚀 Usage
 
+### Clean current directory
+
+```bash
+django-cleaner
+```
+
+### Clean specific directory
+
 ```bash
 django-cleaner ~/StudioProjects
+```
+
+### Skip confirmation (auto delete venv)
+
+```bash
+django-cleaner ~/StudioProjects --venv
 ```
 
 ---
@@ -84,22 +97,22 @@ Do you want to delete virtual environments (venv)? (y/n)
 
 ## 🧠 What gets cleaned?
 
-| Item           | Safe         |
-| -------------- | ------------ |
-| `__pycache__`  | ✅            |
-| `.pyc` files   | ✅            |
-| `logs/`        | ✅            |
-| `staticfiles/` | ✅            |
-| `venv/`        | ✅ (optional) |
+| Item           | Safe            |
+|----------------|-----------------|
+| `__pycache__`  | ✅ Yes          |
+| `.pyc` files   | ✅ Yes          |
+| `logs/`        | ✅ Yes          |
+| `staticfiles/` | ✅ Yes          |
+| `venv/`        | ⚠️ Optional     |
 
 ---
 
 ## 🚫 What is NOT deleted?
 
-* Your Django code
-* `manage.py`
-* apps (`models.py`, `views.py`, etc.)
-* database files
+- Your Django code  
+- `manage.py`  
+- apps (`models.py`, `views.py`, etc.)  
+- database files  
 
 👉 Your project remains fully usable
 
@@ -117,9 +130,9 @@ pip install -r requirements.txt
 
 ## 🌍 Supported Systems
 
-* macOS ✅
-* Linux ✅
-* Windows ⚠️
+- macOS ✅  
+- Linux ✅  
+- Windows ⚠️ (may need minor adjustments)
 
 ---
 
@@ -127,9 +140,9 @@ pip install -r requirements.txt
 
 Django projects accumulate hidden junk over time:
 
-* cache files
-* compiled Python files
-* unused environments
+- cache files  
+- compiled Python files  
+- unused environments  
 
 👉 This tool keeps your machine clean and fast ⚡
 
@@ -137,23 +150,20 @@ Django projects accumulate hidden junk over time:
 
 ## 🚀 Roadmap
 
-* [ ] `--venv` flag
-* [ ] `--dry-run` mode 👀
-* [ ] Flutter + Django cleaner
-* [ ] PyPI release
+- [ ] `--dry-run` mode 👀  
+- [ ] Windows full support  
+- [ ] Multi-command CLI (clean / scan / report)
 
 ---
 
 ## ❤️ Author
 
-Built by **Riyam** ✨
-Flutter & Django Developer
+Built by **Riyam** ✨  
+Flutter & Django Developer  
 
 ---
 
 ## ⭐ Support
 
-If you like this project, give it a star ⭐
+If you like this project, give it a star ⭐  
 It helps a lot 💙
-
-````
