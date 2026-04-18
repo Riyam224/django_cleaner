@@ -76,6 +76,9 @@ pipx install django-cleaner
 
 ```bash
 pip install django-cleaner
+
+# If that doesn't work:
+pip3 install django-cleaner
 ```
 
 ---
@@ -114,7 +117,7 @@ django-cleaner ~/StudioProjects --venv
 
 ## ⚠️ Important Notes
 
-### ❗ If installed with pip:
+### ❗ If installed with pip
 
 Make sure you're **not inside a virtual environment** before running:
 
@@ -140,10 +143,10 @@ deactivate
 
 ## 🚫 What is NOT deleted?
 
-* Django source code
-* `manage.py`
-* apps (`models.py`, `views.py`, etc.)
-* database files
+- Django source code
+- `manage.py`
+- apps (`models.py`, `views.py`, etc.)
+- database files
 
 👉 Your project remains fully functional
 
@@ -161,9 +164,9 @@ pip install -r requirements.txt
 
 ## 🌍 Supported Systems
 
-* macOS ✅
-* Linux ✅
-* Windows ⚠️ (basic support)
+- macOS ✅
+- Linux ✅
+- Windows ⚠️ (basic support)
 
 ---
 
@@ -171,9 +174,9 @@ pip install -r requirements.txt
 
 Django projects accumulate unnecessary files over time:
 
-* cache folders
-* compiled `.pyc` files
-* unused virtual environments
+- cache folders
+- compiled `.pyc` files
+- unused virtual environments
 
 👉 This tool helps you reclaim disk space and keep your workspace clean ⚡
 
@@ -181,10 +184,10 @@ Django projects accumulate unnecessary files over time:
 
 ## 🚀 Roadmap
 
-* [ ] `--dry-run` mode (preview changes)
-* [ ] Progress bar support
-* [ ] Improved Windows compatibility
-* [ ] Advanced filtering options
+- [ ] `--dry-run` mode (preview changes)
+- [ ] Progress bar support
+- [ ] Improved Windows compatibility
+- [ ] Advanced filtering options
 
 ---
 
